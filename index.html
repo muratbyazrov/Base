@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Base</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<h1>Добро пожаловать в базу знаний Мурата Бязрова</h1>
+
+<body class="body">
+    <section class="content">
+        <h2>Содержание</h2>
+        <ul>
+            <li>Фронтенд
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
+
+            <li>Бэкенд
+                <ul>
+                    <li> <a href="#eventLoop">Event Loop</a></li>
+                </ul>
+            </li>
+
+            <li>Вебинары
+                <ul>
+                    <li>Вебинар по...</li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Тут бэкенд -->
+    <section class="article" id="eventLoop">
+        <h3>EventLoop</h3>
+        <p>Хотел затронуть более подробно один вопрос, который является одним из первых на собеседованиях на NodeJS
+            разработчика, а именно Event Loop. </p>
+
+        <p> Loop - базовое понятие в разработке на JS, про него также спрашивают если вы не только устраиваетесь
+            на NodeJS dev. Event Loop реализует порядок выполнения тех или иных асинхронных задач, в зависимости от их
+            типа.</p>
+        <ul>
+            Предлагаю немного познакомиться с материалом:
+            <li><a href="https://habr.com/ru/post/461401/">Браузерный EventLoop</a></li>
+            <li><a href="https://medium.com/devschacht/event-loop-timers-and-nexttick-18579cd122e0">NodeJS EventLoop</a>
+            </li>
+        </ul>
+        </p>
+
+        <ul>
+            Более углубленное объяснение, которое возможно сейчас будет сложно понять, но стоит отложить в копилку и
+            вернуться к этим статьям. На мой взгляд это лучшие статьи по событийному циклу в NodeJS:
+            <ol><a
+                    href="https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810">Статья</a>
+            </ol>
+            <ol><a
+                    href="https://blog.insiderattack.net/timers-immediates-and-process-nexttick-nodejs-event-loop-part-2-2c53fd511bb3">Статья</a>
+            </ol>
+            <ol><a
+                    href="https://blog.insiderattack.net/promises-next-ticks-and-immediates-nodejs-event-loop-part-3-9226cbe7a6aa">Статья</a>
+            </ol>
+            <ol><a href="https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1">Статья</a>
+            </ol>
+            <ol><a
+                    href=" https://blog.insiderattack.net/event-loop-best-practices-nodejs-event-loop-part-5-e29b2b50bfe2">Статья</a>
+            </ol>
+            <ol><a
+                    href="https://blog.insiderattack.net/new-changes-to-timers-and-microtasks-from-node-v11-0-0-and-above-68d112743eb3">Статья</a>
+            </ol>
+        </ul>
+        Читать статьи выше нужно в строгом порядке иначе потеряется контекст!
+
+        <ul>
+            Вот ещё пару видео про это:
+            <li><a href="https://www.youtube.com/watch?v=j4_9BZezSUA">video1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8cV4ZvHXQL4&t=1176s">video3</a></li>
+            <li><a href="https://www.youtube.com/watch?v=8cV4ZvHXQL4&amp=&t=1176s">video2</a></li>
+        </ul>
+    </section>
+
+    <!-- Здесь будут вебинары -->
+    <section class="article">
+        <a href="https://yadi.sk/i/7V03QQl2B355zQ">Ссылка на запись</a> <br>
+
+        <h3>Тайминги:</h3>
+        <ul>
+            12:25 - require vs import. Посмотрели как использовать ESM в Node.js, а также как использовать динамические
+            импорты
+            <li><a href="https://yadi.sk/d/Zo-w67ziTFvavw">Архив с примером</a></li>
+            <li><a href="https://learn.javascript.ru/modules-dynamic-imports">Динамические импорты</a></li>
+            <li><a href="https://webdevblog.ru/chto-takoe-tree-shaking-i-kak-eto-rabotaet">Tree-shaking</a></li>
+            <li><a href="https://webpack.js.org/guides/tree-shaking/">и ещё</a></li>
+        </ul>
+
+        <ul>
+            34:06 - сравнение Node.js фреймворков. Express/Hapi/Koa/Nest. Сравнили фреймворки на примере маленького
+            приложения с одним middleware, поделился своим субъективным мнением :thinking_face:
+            <li><a href="https://yadi.sk/d/QSeZ-YrZ-g7NIg">Архив с примерами</a></li>
+            <li><a href="https://expressjs.com/">Дока по Express</a></li>
+            <li><a href="https://hapi.dev/">Дока по Hapi</a></li>
+            <li><a href="https://koajs.com/">Дока по Koa</a></li>
+            <li><a href="https://nestjs.com/">Дока по Nest</a></li>
+            <li><a href="https://github.com/the-benchmarker/web-frameworks">Бенчмарки по производительности</a></li>
+        </ul>
+
+        <ul>
+            01:18:47 - Отладка кода. Проговорили самые простые, распространенные и безболезненные методы отладки кода на
+            Node.js
+            <li><a href="https://nodejs.org/en/docs/guides/debugging-getting-started/">сылка на возможные подходы к отладке</a></li>
+            <li><a href="https://kinsta.com/learn/what-is-http2/">Гайд по http/2</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

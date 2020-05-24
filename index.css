@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+    width: 65%;
+    margin: auto;
+}
+
+.article {
+    border: 1px solid gray;
+    margin-top: 10px;
+}
